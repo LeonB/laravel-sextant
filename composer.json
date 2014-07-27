@@ -1,0 +1,25 @@
+{
+    "name": "leon-b/sextant",
+    "description": "",
+	"keywords": ["laravel", "routes"],
+    "authors": [
+        {
+            "name": "Leon Bogaert",
+            "email": "leonbogaert@gmail.com",
+            "homepage": "http://www.vanutsteen.nl"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/controllers"
+        ],
+        "psr-0": {
+            "LeonB\\Sextant\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

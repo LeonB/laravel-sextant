@@ -1,0 +1,10 @@
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
+# editorconfig.org
+
+# Not the top-most EditorConfig file
+root = false
+
+[*.php]
+indent_style = tab
+indent_size = 4
