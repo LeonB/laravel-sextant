@@ -18,3 +18,4 @@ POST A SCREENSHOT
 - `php artisan asset:publish leonbo-sextant`
 
 - http://laravel.com/docs/packages
+- https://github.com/jaiwalker/setup-laravel4-package
