@@ -1,7 +1,8 @@
 {
     "name": "leon-b/sextant",
     "description": "",
-	"keywords": ["laravel", "routes"],
+    "keywords": ["laravel", "routes"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Leon Bogaert",
