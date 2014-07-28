@@ -4,7 +4,10 @@ class SextantController extends \BaseController
 {
 	public function routes()
 	{
-		$routes = \LeonB\Sextant\Models\Route::getAll();
+		$router = app()->router;
+		$route = new \LeonB\Sextant\Models\Route($router);
+		return $route->getRoutes();
+		return Route::getRoutes();
 		return \View::make('sextant::routes', array('routes' => $routes));
 	}
 }

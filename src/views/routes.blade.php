@@ -1,5 +1,8 @@
+@extends('sextant::_layouts.sextant')
+
+@section('content')
 <h2>
-	Routes
+	Laravel Routes
 </h2>
 
 <p>
@@ -35,3 +38,4 @@
 <script type='text/javascript'>
 	setupRouteToggleHelperLinks();
 </script>
+@stop
