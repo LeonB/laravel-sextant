@@ -8,9 +8,7 @@ class SextantController extends \BaseController
 	{
 		$routeCollection = new RouteCollection();
 		return \View::make('sextant::routes', array(
-			'headers'         => $routeCollection->getHeaders(),
-			'routes'          => $routeCollection->getRoutes(),
-			'routeCollection' => $routeCollection
+			'routes' => $routeCollection->getRoutes(),
 		));
 	}
 }

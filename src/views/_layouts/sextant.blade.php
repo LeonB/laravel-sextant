@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>Routes</title>
+	<title>Larvel Routes</title>
 	<style>
 		body { background-color: #fff; color: #333; }
 

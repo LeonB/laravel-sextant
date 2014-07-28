@@ -1,6 +1,6 @@
 {
     "name": "leon-b/sextant",
-    "description": "",
+    "description": "Get a list of laravel routes in your browser",
     "keywords": ["laravel", "routes"],
     "license": "MIT",
     "authors": [

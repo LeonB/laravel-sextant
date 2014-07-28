@@ -9,15 +9,9 @@ registered routes in the browser.
 Visit `http://$myapp/laravel/info/routes` to view your routes in a similair
 fashion to `artisan routes`.
 
-POST A SCREENSHOT
+[![screenshot](https://github.com/LeonB/laravel-sextant/raw/master/screenshot.png)](https://github.com/LeonB/laracasts-dl/raw/master/screenshot.png)
 
 ## Installation
 
-- Add `app/config/app.php` => Service
-- `php artisan asset:publish LeonBo/Sextant`
-- `php artisan asset:publish leonbo-sextant`
-- sass src/assets/sextant.scss public/sextant.css
-
-- http://laravel.com/docs/packages
-- https://github.com/jaiwalker/setup-laravel4-package
-- vendor/laravel/framework/src/Illuminate/Foundation/Console/RoutesCommand.php
+- `composer require leon-b/sextant`
+- `composer update`

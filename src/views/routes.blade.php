@@ -9,28 +9,26 @@
 	Routes match in priority from top to bottom
 </p>
 
-<table id='route_table' class='route_table'>
+<table id="route_table" class="route_table">
 <thead>
 	<tr>
-		@foreach ($headers as $header)
-		<th>
-			{{ $header }}
-		</th>
-		@endforeach
+		<th>Domain</th>
+		<th>URI</th>
+		<th>Name</th>
+		<th>Action</th>
+		<th>Before Filters</th>
+		<th>After Filters</th>
 	</tr>
-	<tr class='bottom'>
+	<tr class="bottom">
 	</tr>
 </thead>
 
-<tbody class='matched_paths' id='matched_paths'>
+<tbody class="matched_paths" id="matched_paths">
 </tbody>
 
 <tbody>
-@foreach ($routeCollection->getRoutes() as $route)
-	@include('sextant::_route', array(
-		'headers' => $headers,
-		'route'   => $route,
-	))
+@foreach ($routes as $route)
+	@include('sextant::_route', array('route'=> $route))
 @endforeach
 </tbody>
 </table>
