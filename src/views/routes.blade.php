@@ -11,31 +11,27 @@
 
 <table id='route_table' class='route_table'>
 <thead>
-<tr>
-	<th>
-		<!--
-        Helper (
-        <%= link_to "Path", "#", 'data-route-helper' => '_path',
-                    title: "Returns a relative path (without the http or domain)" %>
-        /
-        <%= link_to "Url", "#", 'data-route-helper' => '_url',
-                    title: "Returns an absolute url (with the http and domain)" %>
-        )
-		-->
-	</th>
-	<th>HTTP Verb</th>
-	<th>Path</th>
-	<th>Controller#Action</th>
-</tr>
+	<tr>
+		@foreach ($headers as $header)
+		<th>
+			{{ $header }}
+		</th>
+		@endforeach
+	</tr>
+	<tr class='bottom'>
+	</tr>
 </thead>
+
+<tbody class='matched_paths' id='matched_paths'>
+</tbody>
+
 <tbody>
-@foreach ($routes as $route)
-	@include('sextant::_route', array('route' => $route))
+@foreach ($routeCollection->getRoutes() as $route)
+	@include('sextant::_route', array(
+		'headers' => $headers,
+		'route'   => $route,
+	))
 @endforeach
 </tbody>
 </table>
-
-<script type='text/javascript'>
-	setupRouteToggleHelperLinks();
-</script>
 @stop

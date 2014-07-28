@@ -1,16 +1,7 @@
 <tr class='route_row' data-helper='path'>
-	<td data-route-name='<%= route[:name] %>'>
-		<% if route[:name].present? %>
-		<%= route[:name] %><span class='helper'>_path</span>
-		<% end %>
+	@foreach ($headers as $header)
+	<td data-route-name='{{ $header }}'>
+		{{ @$route[strtolower($header)] }}
 	</td>
-	<td data-route-verb='<%= route[:verb] %>'>
-		<%= route[:verb] %>
-	</td>
-	<td data-route-path='<%= route[:path] %>'>
-		<%= route[:path] %>
-	</td>
-	<td data-route-reqs='<%= route[:reqs] %>'>
-		<%= route[:reqs] %>
-	</td>
+	@endforeach
 </tr>
